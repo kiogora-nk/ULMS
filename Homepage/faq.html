@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library FAQ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #00a651;
+        }
+        h2{
+            text-align: center;
+            color: white;
+        }
+        p{
+            text-align: center;
+            color: white;
+        }
+        .faq {
+            width: 40%;
+            margin: 0 auto;
+            padding: 10px;
+            border: 1px solid red;
+            border-radius: 5px;
+            background-color: white;
+        }
+        .question {
+            font-weight: bold;
+            margin-top: 15px;
+            cursor: pointer;
+            color: #00a651;
+        }
+        .answer {
+            display: none;
+            margin: 5px 0 15px 0;
+            padding: 10px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="eger.png" alt="">
+    </div>
+    <h2>Librarian FAQs</h2>
+    <p>Here are some of the Frequently Asked Questions</p>
+    <div class="faq">
+        <div class="question" onclick="toggleAnswer(0)">1. What are the library's operating hours?</div>
+        <div class="answer">Our library is open Monday to Friday from 8 AM to 10 PM, Saturday from 10 AM to 5 PM, and closed on Sundays.</div>
+
+        <div class="question" onclick="toggleAnswer(1)">2.  Incase I delay or fail to return a book in time are there any charges?</div>
+        <div class="answer">Overdue library books will be charged a fine of:<br>
+
+            (a)Longloan-Ksh 5.00 per day.<br>
+            (b)Shortloan-Ksh 5/= for the first hour and Sh.10 for every subsequent hour.</div><hr>
+
+        <div class="question" onclick="toggleAnswer(2)">3.Am I allowed to photocopy a library book?</div>
+        <div class="answer">Photocopying is available at ksh.3/= per copy.Note: All photocopying is subject to :<br>
+
+            (a) Copyright Act )Cap 130 Laws of Kenya)<br>
+            (b)The Librarian?s authority to photocopy<br>
+            (c) Written permission from the author's Theses and Dissertations.</div><hr>
+
+        <div class="question" onclick="toggleAnswer(3)">4. When are students registered as library members?</div>
+        <div class="answer">Registration of students will be done within the first month after admission in the first year subject to undergoing orientation.</div><hr>
+
+        <div class="question" onclick="toggleAnswer(4)">5. What would be the consequncies of loosing a library book.</div>
+        <div class="answer"> For lost books members will be:<br>
+            (a)Three times the cost of the book in print.<br>
+            (b) Five times the cost of the book out of print.</div><hr>
+
+        <div class="question" onclick="toggleAnswer(5)">6.How can I borrow a library book?</div><hr>
+        <div class="answer"> All registered library members are allowed to borrow  books and will be expected to identify themselves at the time of borrowing.</div><hr>
+
+        <div class="question" onclick="toggleAnswer(6)">7. Can I print or copy documents at the library?</div><hr>
+        <div class="answer">Yes, we have printing and copying services available. Please check the pricing details at the front desk.</div><hr>
+
+        <div class="question" onclick="toggleAnswer(7)">8. What should I do if I lost a library book?</div><hr>
+        <div class="answer">If you lose a book, please report it to the library staff as soon as possible. We can help you understand the replacement process.</div>
+
+        <div class="question" onclick="toggleAnswer(8)">9. How can I become a member of the University library?</div>
+        <div class="answer">A Membership to the library is open to registered students and Staff. Academic and Non academic staff are to be recommended by their head of department.</div>
+
+        <div class="question" onclick="toggleAnswer(9)">10. How can I volunteer at the library?</div>
+        <div class="answer">We welcome volunteers! Please visit our website or contact the library to learn about current volunteer opportunities and how to apply.</div>
+    </div>
+
+    <script>
+        function toggleAnswer(index) {
+            const answers = document.querySelectorAll('.answer');
+            const answer = answers[index];
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
